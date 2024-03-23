@@ -1,0 +1,12 @@
+syntax = "proto3";
+package outpeer_chain.outpeerchain;
+
+import "gogoproto/gogo.proto";
+import "outpeerchain/outpeerchain/params.proto";
+
+option go_package = "outpeer_chain/x/outpeerchain/types";
+
+// GenesisState defines the outpeerchain module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

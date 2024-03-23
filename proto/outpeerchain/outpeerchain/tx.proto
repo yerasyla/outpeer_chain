@@ -1,0 +1,7 @@
+syntax = "proto3";
+package outpeer_chain.outpeerchain;
+
+option go_package = "outpeer_chain/x/outpeerchain/types";
+
+// Msg defines the Msg service.
+service Msg {}
